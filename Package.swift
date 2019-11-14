@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "RxSwiftExt",
+    name: "RxAppState",
     platforms: [
         .iOS(.v8), .tvOS(.v9), .macOS(.v10_11)
     ],
