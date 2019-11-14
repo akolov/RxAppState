@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.1
 
 import PackageDescription
 
@@ -11,13 +11,10 @@ let package = Package(
         .library(name: "RxAppState", targets: ["RxAppState"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "5.0.0"))
     ],
     targets: [
-        .target(name: "RxAppState",
-                dependencies: ["RxSwift", "RxCocoa"],
-                path: "RxAppState",
-                sources: ["Pod/Classes"])
+        .target(name: "RxAppState", dependencies: ["RxSwift", "RxCocoa"])
     ],
     swiftLanguageVersions: [.v4_2, .v5]
 )
